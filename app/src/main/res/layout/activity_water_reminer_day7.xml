@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3A95FF"
+    android:layout_height="match_parent"
+    tools:context=".ActivityWaterReminerDay7">
+
+    <ImageView
+        android:id="@+id/BackWaterReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backimage" />
+
+    <TextView
+        android:id="@+id/Judulwater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppinssemibold600"
+        android:text="Water Reminder"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Judulwater"
+        app:srcCompat="@drawable/gambargelaswater" />
+
+    <ImageButton
+        android:id="@+id/btnSunday"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/backgroundday"
+        android:text="Sunday"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppinssemibold600"
+        android:gravity="center"
+        android:text="Sunday"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSunday"
+        app:layout_constraintEnd_toEndOf="@+id/btnSunday"
+        app:layout_constraintStart_toStartOf="@+id/btnSunday"
+        app:layout_constraintTop_toTopOf="@+id/btnSunday" />
+
+    <ImageButton
+        android:id="@+id/btnMonday"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/backgroundday"
+        android:backgroundTint="@color/white"
+        android:text="Monday"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSunday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSunday" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppinssemibold600"
+        android:gravity="center"
+        android:text="Monday"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMonday"
+        app:layout_constraintEnd_toEndOf="@+id/btnMonday"
+        app:layout_constraintStart_toStartOf="@+id/btnMonday"
+        app:layout_constraintTop_toTopOf="@+id/btnMonday" />
+
+    <ImageButton
+        android:id="@+id/btnTuesday"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/backgroundday"
+        android:backgroundTint="@color/white"
+        android:text="Tuesday"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnSunday"
+        app:layout_constraintStart_toStartOf="@+id/btnSunday"
+        app:layout_constraintTop_toBottomOf="@+id/btnSunday" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppinssemibold600"
+        android:gravity="center"
+        android:text="Tuesday"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTuesday"
+        app:layout_constraintEnd_toEndOf="@+id/btnTuesday"
+        app:layout_constraintStart_toStartOf="@+id/btnTuesday"
+        app:layout_constraintTop_toTopOf="@+id/btnTuesday" />
+
+    <ImageButton
+        android:id="@+id/btnWednesday"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/backgroundday"
+        android:backgroundTint="@color/white"
+        android:text="Wednesday"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnMonday"
+        app:layout_constraintStart_toStartOf="@+id/btnMonday"
+        app:layout_constraintTop_toBottomOf="@+id/btnMonday" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppinssemibold600"
+        android:gravity="center"
+        android:text="Wednesday"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnWednesday"
+        app:layout_constraintEnd_toEndOf="@+id/btnWednesday"
+        app:layout_constraintStart_toStartOf="@+id/btnWednesday"
+        app:layout_constraintTop_toTopOf="@+id/btnWednesday" />
+
+    <ImageButton
+        android:id="@+id/btnThursday"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/backgroundday"
+        android:backgroundTint="@color/white"
+        android:text="Thursday"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnTuesday"
+        app:layout_constraintStart_toStartOf="@+id/btnTuesday"
+        app:layout_constraintTop_toBottomOf="@+id/btnTuesday" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppinssemibold600"
+        android:gravity="center"
+        android:text="Thursday"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnThursday"
+        app:layout_constraintEnd_toEndOf="@+id/btnThursday"
+        app:layout_constraintStart_toStartOf="@+id/btnThursday"
+        app:layout_constraintTop_toTopOf="@+id/btnThursday" />
+
+    <ImageButton
+        android:id="@+id/btnFriday"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/backgroundday"
+        android:backgroundTint="@color/white"
+        android:text="Friday"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnWednesday"
+        app:layout_constraintStart_toStartOf="@+id/btnWednesday"
+        app:layout_constraintTop_toBottomOf="@+id/btnWednesday" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppinssemibold600"
+        android:gravity="center"
+        android:text="Friday"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFriday"
+        app:layout_constraintEnd_toEndOf="@+id/btnFriday"
+        app:layout_constraintStart_toStartOf="@+id/btnFriday"
+        app:layout_constraintTop_toTopOf="@+id/btnFriday" />
+
+    <ImageButton
+        android:id="@+id/btnSaturday"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/backgroundday"
+        android:backgroundTint="@color/white"
+        android:text="Saturday"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnFriday"
+        app:layout_constraintStart_toStartOf="@+id/btnThursday"
+        app:layout_constraintTop_toBottomOf="@+id/btnFriday" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppinssemibold600"
+        android:gravity="center"
+        android:text="Saturday"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSaturday"
+        app:layout_constraintEnd_toEndOf="@+id/btnSaturday"
+        app:layout_constraintStart_toStartOf="@+id/btnSaturday"
+        app:layout_constraintTop_toTopOf="@+id/btnSaturday" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".ActivityResepCapcay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/backcapcay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/backimage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/bad"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/capcaybg" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaloriTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Capcay (778 kalori)"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ingredientsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Bahan-bahan:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView untuk Daftar Bahan -->
+
+            <!-- TextView untuk Langkah-langkah Pembuatan -->
+            <TextView
+                android:id="@+id/ingredientsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="100 gr ayam fillet, potong dadu\n3 buah sosis, iris serong\n3-5 buah bakso ayam, potong sesuai selera\n1 buah wortel, iris tipis\n5 lembar sawi putih, potong-potong\n1 lembar daun bawang, potong-potong\n3 siung bawang putih, cincang\n1/2 buah bawang bombay ukuran besar, iris tipis\n1 sdt merica bubuk\n1 1/2 sdm saus tiram\nSecukupnya gula, garam, dan kaldu jamur\nMinyak goreng untuk menumis\nAir, secukupnya\n1 sdt tepung maizena, larutkan dengan sedikit air"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/stepsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Langkah-langkah:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView untuk Daftar Langkah -->
+            <TextView
+                android:id="@+id/stepsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="1.otong semua bahan sesuai petunjuk, cincang bawang putih dan iris bawang bombay tipis-tipis. Campurkan tepung maizena dengan sedikit air dalam mangkuk kecil untuk membuat larutan pengental.\n2.Panaskan sedikit minyak goreng dalam wajan di atas api sedang.\n3.Tumis bawang putih dan bawang bombay hingga harum dan berwarna sedikit kecoklatan.\n4.Masukkan potongan ayam fillet ke dalam wajan, aduk hingga ayam berubah warna dan matang merata.\n5.Setelah ayam matang, tambahkan potongan sosis dan bakso ayam. Tumis sebentar hingga bakso dan sosis juga matang.\n6.Masukkan jagung muda, wortel, dan sawi putih. Aduk-aduk hingga sayuran setengah matang dan masih renyah\n7.Tambahkan merica bubuk, saus tiram, gula, garam, dan kaldu jamur sesuai selera. Aduk rata hingga semua bahan tercampur dengan bumbu.\n8.Tuangkan sedikit air ke dalam wajan untuk membantu memasak dan membuat kuah.\n9.Setelah sayuran matang dan air mulai mendidih, tuangkan larutan maizena untuk mengentalkan kuah. Aduk terus agar tidak menggumpal.\n10.Tambahkan potongan daun bawang ke dalam wajan sebagai sentuhan terakhir, lalu aduk sebentar hingga layu, JIka sudah maka angkat dan sajikan"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
